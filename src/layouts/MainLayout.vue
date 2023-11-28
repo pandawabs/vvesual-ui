@@ -1,10 +1,8 @@
-<script setup>
-import HelloWorld from "../components/HelloWorld.vue";
-</script>
+<script setup></script>
 
 <template>
   <div class="rounded-2xl bg-white p-4 md:p-16">
-    <HelloWorld msg="VVESUAL UI (Vite + Vue 3 + Tailwind CSS v3)" />
+    <router-view />
   </div>
 </template>
 

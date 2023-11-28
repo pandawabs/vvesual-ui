@@ -1,11 +1,15 @@
 <script setup>
-import { inject } from "vue";
+import { Routes } from "../../router.js";
 import NavigationItem from "./NavigationItem.vue";
-
-const navItems = inject("main-navs", []);
 </script>
 <template>
   <nav class="flex flex-col gap-1">
-    <NavigationItem v-for="item in navItems" />
+    <NavigationItem
+      v-for="route in Routes"
+      :to="route.path"
+      :title="route.title"
+      is-external-link="false"
+      >{{ route.label }}</NavigationItem
+    >
   </nav>
 </template>
