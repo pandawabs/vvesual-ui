@@ -3,10 +3,10 @@ import { createRouter, createWebHashHistory } from "vue-router";
 const Routes = [
   {
     path: "/",
-    label: "Home",
-    title: "Home",
-    icon: "HomeIcon",
-    component: () => import("./pages/HomePage.vue"),
+    label: "Getting Started",
+    title: "Getting Started",
+    icon: "RocketLaunchIcon",
+    component: () => import("./pages/GettingStartedPage.vue"),
   },
   {
     path: "/core",
