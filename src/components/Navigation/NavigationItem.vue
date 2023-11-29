@@ -6,8 +6,8 @@ import NavigationCore from "./NavigationCore.vue";
   <NavigationCore
     v-bind="$attrs"
     class="rounded-xl p-3 font-mono"
-    active-class="font-bold bg-white/75"
-    inactive-class="hover:bg-white/50 hover:font-semibold"
+    active-class="font-bold bg-emerald-500"
+    inactive-class="hover:bg-white/10 hover:font-semibold hover:text-emerald-500"
   >
     <slot />
   </NavigationCore>
