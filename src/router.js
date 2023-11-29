@@ -9,9 +9,9 @@ const Routes = [
     component: () => import("./pages/HomePage.vue"),
   },
   {
-    path: "/cores",
-    label: "Cores",
-    title: "Cores",
+    path: "/core",
+    label: "Core",
+    title: "Core",
     icon: "CubeIcon",
     component: () => import("./pages/CorePage.vue"),
   },
