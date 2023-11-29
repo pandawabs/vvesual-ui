@@ -1,6 +1,6 @@
 <script setup>
 import { Routes } from "../../router.js";
-import IconAsyncComponent from "../Icon/IconAsyncComponent.vue";
+import IconElement from "../../elements/IconElement.vue";
 import NavigationItem from "./NavigationItem.vue";
 </script>
 <template>
@@ -11,7 +11,7 @@ import NavigationItem from "./NavigationItem.vue";
       :title="route.title"
       is-external-link="false"
       class="flex flex-row gap-2"
-      ><IconAsyncComponent
+      ><IconElement
         v-if="route.icon"
         :name="route.icon"
         type="solid"

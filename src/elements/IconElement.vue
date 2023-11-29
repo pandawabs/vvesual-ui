@@ -17,14 +17,14 @@ const props = defineProps({
   },
 });
 
-const IconAsyncComponent = defineAsyncComponent({
+const IconElement = defineAsyncComponent({
   loader: async () => {
     if (props.type === "outline") {
-      return import(/* @vite-ignore */ `@heroicons/vue/24/outline`).then(
+      return import("@heroicons/vue/24/outline").then(
         (module) => module[props.name]
       ) as Promise<Component>;
     } else {
-      return import(/* @vite-ignore */ `@heroicons/vue/24/solid`).then(
+      return import("@heroicons/vue/24/solid").then(
         (module) => module[props.name]
       ) as Promise<Component>;
     }
@@ -33,5 +33,5 @@ const IconAsyncComponent = defineAsyncComponent({
 </script>
 
 <template>
-  <IconAsyncComponent />
+  <IconElement />
 </template>
