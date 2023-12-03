@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer base {
+  /* Typhography */
   h1 {
     @apply font-semibold;
     @apply text-4xl;
@@ -10,32 +11,36 @@
   }
   h2 {
     @apply font-semibold;
-    @apply text-4xl;
+    @apply text-3xl;
     @apply leading-loose;
   }
   h3 {
     @apply font-medium;
-    @apply text-3xl;
+    @apply text-2xl;
     @apply leading-relaxed;
   }
   h4 {
     @apply font-medium;
-    @apply text-2xl;
+    @apply text-xl;
     @apply leading-relaxed;
   }
   h5 {
     @apply font-medium;
-    @apply text-xl;
+    @apply text-lg;
     @apply leading-normal;
   }
   h6 {
-    @apply font-normal;
-    @apply text-lg;
+    @apply font-medium;
+    @apply text-base;
+    @apply leading-normal;
+  }
+  p {
     @apply leading-normal;
   }
   body {
     @apply overflow-y-scroll;
   }
+  /* End of Typhography */
   /* Scrollbar */
   ::-webkit-scrollbar {
     @apply w-2;
