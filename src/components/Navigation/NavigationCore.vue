@@ -1,28 +1,28 @@
 <script>
 import { RouterLink } from "vue-router";
+import LinkElement from "../../elements/LinkElement.vue";
 
 export default {
-  name: "NavigationCore",
-  inheritAttrs: false,
-
-  props: {
-    // add @ts-ignore if using TypeScript
-    ...RouterLink.props,
-    inactiveClass: String,
-  },
-
-  computed: {
-    isExternalLink() {
-      return typeof this.to === "string" && this.to.startsWith("http");
+    name: "NavigationCore",
+    inheritAttrs: false,
+    props: {
+        // add @ts-ignore if using TypeScript
+        ...RouterLink.props,
+        inactiveClass: String,
     },
-  },
+    computed: {
+        isExternalLink() {
+            return typeof this.to === "string" && this.to.startsWith("http");
+        },
+    },
+    components: { LinkElement }
 };
 </script>
 
 <template>
-  <a v-if="isExternalLink" v-bind="$attrs" :href="to" target="_blank">
+  <LinkElement v-if="isExternalLink" v-bind="$attrs" :href="to">
     <slot />
-  </a>
+  </LinkElement>
   <router-link
     v-else
     v-bind="$props"
