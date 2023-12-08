@@ -2,7 +2,7 @@
 
 <template>
   <main
-    class="border-slate-950 bg-slate-50 p-4 pt-36 md:rounded-2xl md:border-8 md:p-16"
+    class="border-slate-950 bg-white bg-white/40 p-4 pt-36 drop-shadow-lg backdrop-blur md:rounded-2xl md:border-8 md:bg-white md:p-16"
   >
     <router-view />
   </main>
