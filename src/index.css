@@ -57,4 +57,9 @@
     @apply bg-slate-800;
   }
   /* End of Scrollbar */
+
+  pre[class*="language-"] {
+    @apply !rounded-lg;
+    @apply transition ease-in-out delay-0 duration-300 shadow-none hover:shadow-md shadow-black;
+  }
 }
