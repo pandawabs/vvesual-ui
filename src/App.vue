@@ -4,7 +4,7 @@ import NavigationLayout from "./layouts/NavigationLayout.vue";
 </script>
 
 <template>
-  <div class="flex flex-col gap-4 p-0 md:flex-row md:p-4">
+  <div class="flex flex-col gap-4 p-0 lg:flex-row lg:p-4">
     <div class="basis-1/4">
       <NavigationLayout />
     </div>

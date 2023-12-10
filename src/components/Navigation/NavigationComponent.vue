@@ -4,7 +4,7 @@ import IconElement from "../../elements/IconElement.vue";
 import NavigationItem from "./NavigationItem.vue";
 </script>
 <template>
-  <nav class="flex flex-wrap gap-1 md:flex-col">
+  <nav class="flex flex-wrap gap-1 lg:flex-col">
     <NavigationItem
       v-for="route in Routes"
       :to="route.path"
@@ -15,7 +15,7 @@ import NavigationItem from "./NavigationItem.vue";
         v-if="route.icon"
         :name="route.icon"
         type="solid"
-        class="h-6 w-6"
+        class="h-6 w-6 self-center"
       /><span class="hidden sm:block">{{ route.label }}</span></NavigationItem
     >
   </nav>
